@@ -1,0 +1,1347 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+}
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #363636;
+  background-image:url('../images/main-background.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  padding: 0;
+  margin: 0;
+  
+}
+h1 {
+  font-size: 2.5em; 
+}
+h2 {
+  font-size: 1.875em;
+}
+p {
+  font-size: 0.875em;
+}
+h1, h2 {
+  font-family: 'Damion', cursive;
+  color: #363636;
+  text-align: center;
+}
+/*====================================== Navigation bar ======================================*/
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+nav {
+  overflow: hidden;
+}
+.logo {
+  border-radius: 5px;
+}
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav li{
+  height: 50px;
+}
+.nav-container a {
+  background-color: transparent;
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none; 
+  display: flex;
+  align-items: center;
+  color: #363636 ;
+  transition: background-color 0.3s;
+}
+.nav-container a::after,
+.nav-container a::before {
+  transition: all .5s;
+}
+.nav-container a:hover {
+  color:#c9ac55;
+}
+.nav-container a {
+  position: relative;
+}
+.nav-container a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #c9ac55;
+  height: 3px;
+}
+.nav-container a:hover::after{
+  width:50%;
+}
+.nav-container a.active::after {
+  width: 50%;
+}
+/*====================================== Side bar ======================================*/
+.menu-button {
+  display: none;
+}
+.sidebar {
+  position:fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.438);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li {
+  padding: 20px;
+  width: 100%;
+}
+.sidebar a {
+  text-decoration: none;
+  color: #363636;
+}
+.sidebar a:hover {
+  color: #c9ac55;
+}
+.close {
+  left: 10px; 
+  top: 10px; 
+  padding: 10px;
+  cursor: pointer; 
+}
+/*====================================== Buttons ======================================*/
+/* Appointment button header */
+.appointment-button-header {
+  font-size: 15px;
+  text-decoration: none;
+  background-color: #d4af37;
+  color: #ffffff;
+  padding: 12px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.appointment-button-header:hover {
+  color: #d4af37;
+  border: 2px solid #d4af37;
+  background-color: transparent;
+}
+/* Appointment button */
+.appointment-button {
+  font-size: 15px;
+  text-decoration: none;
+  background-color: #d4af37;
+  color: #ffffff;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.appointment-button:hover {
+  color: #d4af37;
+  border: 2px solid #d4af37;
+  background-color: transparent;
+}
+.border-button {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #d4af37;
+  padding: 12px 30px;
+  border: 2px solid #d4af37;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.border-button:hover {
+  color: #ffffff;
+  border: 2px solid #dace99;
+  background-color: #dace99;
+}
+.border-button-small {
+  font-size: small;
+  text-decoration: none;
+  background-color: #fff;
+  color: #d4af37;
+  padding: 3px 20px;
+  border: 1px solid #d4af37;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.border-button-small:hover {
+  color: #fff;
+  background-color: #e2ce75;
+}
+.button {
+  margin-top: 10px;
+  background-color: #d4af37; 
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.button:hover {
+  background-color: #f8d97b;
+}
+.button-small {
+  margin-top: 10px;
+  font-size: small;
+  text-decoration: none;
+  background-color: #d4af37; 
+  color: white;
+  padding: 3px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.button-small:hover {
+  background-color: #f8d97b;
+}
+/*====================================== Hero Section ======================================*/
+/*Hero section*/
+.hero-section {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10%;
+}
+.hero-contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.hero-text-container {
+  text-align: left;     
+}
+.hero-section h1 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.hero-section p {
+  font-size: 1.2em;
+  color: #333333;
+  margin-bottom: 5%;
+}
+.hero-section img {
+  margin-top: 5%;
+}
+/*====================================== About Section ======================================*/
+.about-us-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  background-image: url('../images/yellow-background.webp');
+  background-size: cover;
+  color: #333;
+  text-align: center;
+  flex-direction: column;
+}
+.contacts-container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 10px;
+  gap: 20px;
+}
+.contacts-container img{
+  width: 20px;
+  height: 20px;
+}
+.contacts-column-one, .contacts-column-two {
+  line-height: 3;
+  padding: 10px;
+  text-align: left; 
+}
+.about-contact-information{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/*====================================== Services Section ======================================*/
+.services-section {
+  padding: 40px 20px; 
+  text-align: center;
+  background-image: url('../images/background\(3\).webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.packages-container{
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.packages-container img {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; 
+  transition: transform 0.4s ease-in-out;
+}
+.packages-container img:hover {
+  transform: scale(1.1);
+}
+/* Gift voucher */
+.gift-voucher-container {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; 
+  text-align: center;
+  padding:20px;
+}
+.gift-voucher-container img {
+  border-radius: 10px; 
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1); 
+}
+.gift-voucher-details {
+  padding: 5px;
+  text-align: left;
+  width: 50%; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-around;
+  width: 550px;
+  height: auto;
+}
+.gift-voucher-container h2 {
+  margin-bottom: 10px;
+  text-align: left;
+}
+.gift-voucher-container div {
+  margin-top: 10px;
+}
+/*====================================== Testimonials Section ======================================*/
+.testimonial-section {
+  position: relative;
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  padding: 3%;
+  background-image: url('../images/background\(5\).webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* Slider Container */
+.slider {
+  position: relative;
+  overflow: hidden; 
+  padding: 10px;
+}
+.testimony-container {
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+  background-color: #c9ac55;
+  text-align: left;
+  width: 100%; 
+  max-width: 700px; 
+  height: auto; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+.testimony-container img {
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+.testimony {
+  padding: 25px;
+  text-align: left;
+  width: 50%; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+}
+.testimony h3 {
+  margin-bottom: 20px;
+  text-align: left;
+}
+/* Arrows (prev & next) */
+.prev, .next {
+  text-decoration: none;
+  cursor: pointer;
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  width: 50px; 
+  height: 50px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  color: #ffffff; 
+  background-color: #00000050;
+  border-radius: 3px; 
+  font-size: 45px; 
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  user-select: none; 
+  
+}
+.prev {
+  left: 1px;
+}
+.next {
+  right: 1px;
+}
+/* Arrow hover effect */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.555);
+  color: #ffffff;
+}
+/* Indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 20px 2px;
+  background-color: #36363665;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #00000093;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/*====================================== Story Section ======================================*/
+.background-story-section {
+  padding: 50px;
+  background-image: url('../images/background\(4\).webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.story {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+}
+.story-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  gap: 50px;
+}
+.story-container img {
+  border-radius: 10px; 
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+.story-content{
+  padding: 5px;
+  text-align: left;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-around;
+  width: 550px;
+  height: auto;
+}
+/*====================================== Services Page ======================================*/
+.educational-container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 50px;
+}
+.tips-container {
+  margin: 20px;
+  width: 400px;
+  text-align: left;
+}
+.tips-container h2 {
+  text-align: left;
+}
+.what-we-offer-section {
+  margin-top: 50px;
+  text-align: center;
+}
+/*Grooming services*/
+.dog-grooming-section {
+  padding: 50px;
+}
+.dog-grooming-section h2 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+.dog-grooming-container{
+  background-image:url('../images/background\(1\).webp');
+  background-size: cover;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 100px;
+  padding-top: 50px;
+  border-radius: 25px;
+}
+.dog-grooming-container h2{
+  text-align: center;
+}
+.services-container {
+  padding: 20px;
+  margin: 50px;
+  width: 500px;
+ }
+.services-container h3 {
+  font-family: 'Raleway', sans-serif;
+  color: #2c3e50; 
+  text-align: left;
+  margin-bottom: 20px;
+  text-transform: uppercase; 
+  letter-spacing: 2px;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+}
+.services {
+  padding-top: 10px;
+  text-align: left;  
+}
+.service {
+  margin-bottom: 5px;
+}
+.service-and-price {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px dotted #ccc;
+  margin: 5px;
+  padding: 5px 0;
+}
+.service-and-price .service-name {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+.service-and-price .service-price {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e67e22;
+}
+.service-description {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+.contact-section {
+  background-image: url('../images/background\(5\).webp');
+  background-size: cover;
+}
+.contact-form-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 800px;
+  margin: 110px auto;
+  background-image:url('../images/background\(2\).webp');
+  background-size: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.contact-form-container h2{
+  padding: 50px;
+}
+.form-container {
+  padding: 50px;
+  background-image:url('../images/yellow-background.webp');
+  background-size: cover;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+.form-group input,
+.form-group textarea {
+  font-family: 'Roboto', sans-serif;
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 25px;
+  font-size: 16px;
+  color: #333333;
+}
+.form-group textarea {
+  resize: none;
+  height: 120px;
+}
+.form-group button {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #dadada;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+.form-group button:hover {
+  color: #777;
+  background-color: #f7f7f7;
+}
+/*====================================== Gallery ======================================*/
+.con{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10%;
+}
+.con-contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.con-text-container {
+  text-align: left;     
+}
+.con h1 {
+  text-align: left;
+ 
+}
+.con p {
+  text-align: left;
+  font-family:'Raleway', sans-serif;
+  color: #333333;
+}
+.con img {
+  width: 500px;
+  height: auto;
+ 
+}
+.gallery-main-container h2{
+  margin: 50px;
+}
+.video {
+  padding: 30px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  background-image: url('../images/bg.png');
+  background-size: cover;
+}
+.video h2 {
+  margin-bottom: 50px; 
+  color: #333333; 
+  text-align: center;
+}
+.video iframe {
+  width: 100%;
+  max-width: 860px;
+  height: auto;
+  aspect-ratio: 16/9;
+  border-width: 0px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+div.gallery {
+  margin: 5px;
+  float: left;
+  width: 200px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+div.gallery:hover {
+  border: 1px solid #777;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+div.desc p {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.0rem;
+  color: #000000;
+}
+.gallery-container {
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+}
+/*====================================== Contact ======================================*/
+.contact-form-section h1 {
+  margin: 50px;
+}
+.container{
+  display: flex;
+  justify-content: left;
+  padding: 5px;
+  gap: 10px;
+}
+.form {
+  margin: 50px;
+}
+.form-contact-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 800px;
+  margin: 110px auto;
+  background-image:url('../images/bg.png');
+  background-size: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.contact-details-container {
+  padding: 50px;
+  background-image:url('../images/white-background.png');
+}
+.contact-details-container h2{
+ font-family: 'Roboto', sans-serif;
+ color: #000000;
+  text-align: left;
+}
+.map-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 100%; 
+  height: 100vh; 
+  box-sizing: border-box;
+}
+.map-container iframe {
+  width: 100%; 
+  height: 600px; 
+  max-width: 1000px; 
+  border: 0;
+}
+/*====================================== Booking ======================================*/
+.booking-container {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  margin: 50px auto;
+}
+.booking-form-container {
+  display: flex;
+  background-image: url('../images/white-background.png');
+  align-items: center;
+}
+.booking-form {
+  margin: 40px;
+}
+.booking-form h2{
+  margin-bottom: 20px;
+}
+.names {
+  display: flex;
+  gap: 10px;
+}
+.names label {
+  flex: 1;
+}
+.names input {
+  flex: 1;
+}
+.form-group-booking label {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+}
+.names input[type="text"],
+.form-group-booking input[type="text"],
+.form-group-booking input[type="email"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.form-group-booking textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.form-group-booking input[type="submit"] {
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  background-color: #d4af37;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.form-group-booking  input[type="submit"]:hover {
+  background-color: #dace99;
+}
+/* Appointment Details */
+.appointment-details {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  background-image: url('../images/bg.png');
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.con-details {
+  padding: 5px;
+  background-color: #ffffff;
+}
+.appointment-details p {
+  color: #ffffff;
+  margin: 5px 0;
+}
+/*====================================== Footer ======================================*/
+/* Footer */
+footer {
+  background-color: #d4af37;
+  padding: 20px;
+  color: #ffffff;  
+}
+footer h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+footer p {
+  color: #ffffff;
+}
+.footer-row-one {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+}
+.footer-container-one {
+  padding: 10px;
+}
+.footer-logo {
+  border-radius: 15px;
+  margin-bottom: 5px;
+}
+.social-media-icons-container {
+  display: flex;
+  justify-content: space-around;
+}
+.facebook-icon, .instagram-icon {
+  padding: 5px;
+}
+.footer-container-two {
+  padding: 10px;
+}
+.footer-container-three {
+  padding: 10px;
+  text-align: left;
+}
+.quick-links-container li {
+  list-style: none;
+}
+.quick-links-container a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+}
+.quick-links-container a:hover {
+  color: #363636;
+}
+.footer-row-two {
+  margin-top: 50px;
+  text-align: center;
+}
+.footer-row-two a{
+  color: #ffffff;
+ text-decoration: none;
+}
+.footer-row-two a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+}
+.footer-row-two a:hover{
+  color: #363636;
+}
+/*====================================== Media ======================================*/
+@media (max-width: 812px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .appointment-button-header{
+    display: none;
+  }
+  header {
+    display: inline-flex;
+    flex-direction: row-reverse; 
+    gap: 20px;
+    padding: 20px;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+@media only screen and (max-width: 768px){
+  /*================== Font size ==================*/
+  h1 {
+    font-size: 2.5em; 
+  }
+  h2 {
+    font-size: 1.8em; 
+  }
+  p {
+    font-size: 1em; 
+  }
+  .hero-section p {
+    font-size: 1em;
+  }
+  .about-us-contents p {
+    font-size: 1em;
+    
+  }
+  .logo {
+    width: 80%;
+    height: 80%;
+  }
+  /*================== Buttons ==================*/
+  .appointment-button {
+    padding: 10px 20px; 
+  }
+  
+  /*================== Hero section ==================*/
+  .hero-section {
+    padding: 10px 10px 0px 10px;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-section h1 {
+    text-align: center;
+  }
+  .hero-text-container {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .hero-section img {
+    width: 50%;
+    height: 50%;
+  }
+  /*================== About us section ==================*/
+  .contacts-container {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .gift-voucher-container img {
+    width: 70%;
+    height: 70%;
+  }
+   .gift-voucher-details, .gift-voucher-details h2 {
+    text-align: center;
+  }
+  /*================== Testimonials section ==================*/
+  .testimonial-section {
+    align-items: center; 
+  }
+  .slider {
+    padding: 10px;
+  }
+  .testimony-container {
+   width: 100%;
+    height: 100%;
+  }
+  .testimony-container img {
+    width: 50%;
+    height: 50%;
+  }
+  .testimony {
+    width: 100%;
+  }
+  /*================== Story section ==================*/
+  .background-story-section {
+    padding: 0%;
+  }
+  .story-container {
+    align-items: center;
+    
+  }
+  .story-container img {
+    width: 50%;
+  
+  }
+  .story-content {
+    width: 80%;
+  }
+  /*================== Educational section ==================*/
+  .educational-container img {
+    width: 50%;
+    height: 50%;
+  }
+  .educational-container p {
+    margin: 5px;
+  }
+  /*================== Grooming services section ==================*/
+  .dog-grooming-section{
+    text-align: center;
+  }
+  .dog-grooming-section h2{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .dog-grooming-container {
+  
+    align-items: center;
+  }
+  .services-container {
+    width: 100%;
+    padding: 0;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .service-and-price{
+    width: 90%;
+  }
+  .service-and-price .service-name {
+    font-size: 1.2em;
+    
+  }
+  .service-and-price .service-price {
+    font-size: 1.2em;  
+  }
+  .service-description {
+    font-size:1.0em;
+  }
+  .service {
+    width: 90%;;
+  }
+  /*================== Gallery page ==================*/
+  .con-text-container {
+    padding: 20px;
+    text-align: center;     
+  }
+  
+  .con h1 {
+    text-align: center;
+    margin-bottom: 30px;
+   
+  }
+  
+  .con p {
+    text-align: center;
+    font-family:'Raleway', sans-serif;
+    color: #333333;
+  }
+  .video iframe {
+    max-width: 100%; 
+    height: auto;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  div.gallery {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  /*================== Contact ==================*/
+  .contact-form-container {
+    flex-direction: column;                            
+    width: 80%;
+    margin: 100px auto;
+    box-sizing: border-box;
+  }
+  .contact-form-container h2 {
+    padding: 20px;
+    font-size: 1.5em;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+  }
+  .forms-container {
+    background-color: #555;
+    width: 100px;
+  }
+  .form-contact-container {
+    width: 80%;
+    margin: 100px auto;
+    flex-direction: column-reverse;
+  }
+  .form {
+    margin: 30px;
+  }
+  .contact-details-container {
+    padding: 30px;
+  }
+  .map-container iframe {
+    height: 400px;
+  }
+   /*================== Booking==================*/
+  .booking-container {
+    width: 85%;
+    
+  }
+  .names input[type="text"],
+  .form-group-booking input[type="text"],
+  .form-group-booking input[type="email"] {
+    width: 100%; 
+  }
+  .form-group-booking textarea { 
+    width: 100%;
+  }
+  .form-group-booking input[type="submit"] {
+    width: 100%;
+  }
+  .booking-form {
+    width: 100%;
+   
+  }
+  .appointment-details {
+    padding: 40px;
+    width: 80%;
+    height: 100%;
+  }
+   /*================== Footer ==================*/
+  .footer-row-one {
+    flex-direction:column;
+  }
+}
+@media (max-width: 480px) {
+  
+  /*================== Sidebar ==================*/
+  .sidebar{
+    padding: 10px;
+    width: 100%;
+  }
+  /*================== Hero section ==================*/
+  .hero-section {
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-section p {
+    font-size: 0.875em;
+    text-align: center;
+  }
+  .hero-text-container {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .hero-section .appointment-button {
+    padding: 5px 10px;
+    
+  }
+  .hero-section img {
+    width: 60%;
+  }
+  .gift-voucher-container img {
+    width: 100%;
+    height: 100%;
+  }
+  /*================== Testimony section ==================*/
+  .slider {
+    padding: 35px;
+  }
+  
+  .testimony-container {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .testimony-container img {
+    width: 100%;
+    height: 100%;
+  }
+  .testimony {
+    width: 100%;
+    height: 100%;
+  }
+  .prev, .next { 
+    width: 40px; 
+    height: 40px;
+    font-size: 30px; 
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+  
+  /*================== Story section ==================*/
+  .story-container {
+    padding: 20px;
+    flex-direction: column;
+  }
+  .story-container img {
+    height: 100%;
+    width: 100%;
+  }
+  .story-content {
+    width: 100%;
+  }
+  .educational-container {
+    flex-direction: column-reverse;
+  }
+  .educational-container img {
+    width: 100%;
+    height: 100%;
+  }
+  .tips-container {
+    padding: 20px;
+    text-align: center;
+  }
+  .tips-container h2 {
+    text-align: center;
+  }
+  /*================== Dog grooming section ==================*/
+  .dog-grooming-section {
+   padding: 0px;
+   margin: 0px;
+  }
+  
+  .dog-grooming-container {
+    width: 100%;
+  }
+  .services-container {
+    width: 75%;
+    
+  }
+  .service {
+    width: 100%;
+   
+  }
+  .services-container h3 {
+    text-align: left;
+  }
+  .service-and-price .service-name {
+    font-size: 1.2em;
+  }
+  
+  .service-and-price .service-price {
+    font-size: 1.2em;
+    
+  }
+  /*================== Gallery ==================*/
+  .video iframe {
+    max-width: 100%; 
+    height: auto;
+  }
+  .grid {
+    grid-template-columns: 1fr; 
+  }
+  div.gallery {
+    width: 100%; 
+    margin-bottom: 15px;
+  }
+  #gallery-main h1 {
+    font-size: 1.5rem; 
+    margin: 20px 0;
+  }
+  div.desc p {
+    font-size: 0.9rem;
+  }
+  /*================== Contact ==================*/
+  .contact-form-container {
+    width: 100%;
+  }
+  .form-contact-container {
+    width: 100%;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+  }
+  .form-group button {
+    width: 100%;
+    padding: 12px;
+  }
+  .contacts-details h2 {
+    font-size: 1rem;
+  }
+  .map-container iframe {
+    padding: 5px;
+    height: 100%;
+  }
+  /*================== Booking form ==================*/
+  .booking-container {
+    padding: 10px;
+    margin: 0px;
+    width: 100%;
+   
+  }
+  .booking-form-container {
+    flex-direction: column-reverse;
+   
+  }
+  .booking-form {
+    text-align: left;
+    width: 70%;
+    
+  }
+  .appointment-details {
+    text-align: left;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /*================== Footer ==================*/
+  .footer-row-one {
+    flex-direction:column;
+  }
+}
