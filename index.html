@@ -1,4 +1,4 @@
-<!-- Shekinah Joy Canosa 5075645 Assessment 2-->
+<!-- Shekinah Joy Canosa 5075645 Assessment 3-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -33,16 +33,16 @@
           </div class="">
           <ul class="navbar-nav gap-4 d-lg-flex flex-lg-row d-md-flex flex-md-column ps-5 ps-md-5 ps-sm-5">
             <li class="nav-item">
-              <a class="nav-link active fs-md-5 fw-medium" aria-current="page" href="#">Home</a>
+              <a class="nav-link active fs-5 " aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-md-5 fw-medium" href="services.html">Services</a>
+              <a class="nav-link fs-5 " href="services.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-md-5 fw-medium" href="gallery.html">Gallery</a>
+              <a class="nav-link fs-5" href="gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-md-5 fw-medium" href="contact.html">Contact Us</a>
+              <a class="nav-link fs-5 " href="contact.html">Contact Us</a>
             </li>
             </li>
             <li class="nav-item d-lg-none">
@@ -60,19 +60,20 @@
 
     <main>
       <section class="container py-5">
-        <div class="row align-items-center"> 
+        <div class="row align-items-center">
           <!-- Text Column -->
           <div class="col-12 col-md-6 text-center text-md-start">
-            <h1 class="fw-semibold">Welcome to Snazzy Paws Grooming!</h1>
+            <h1 class="fw-bold text-start">Welcome to Snazzy Paws Grooming!</h1>
             <p>Where every pet gets the best care, style, and comfort.</p>
-            <a class="btn btn-primary" href="booking.html">Book now</a>
+            <a class="btn btn-primary" href="booking.html">Book Now</a>
           </div>       
           <!-- Image Column -->
           <div class="col-12 col-md-6 text-center">
-            <img src="images/dog-image.svg" class="img-fluid" width="500" height="500" alt="photo">
+            <img src="images/dog-image.svg" class="img-fluid mx-auto d-block" width="500" height="500" alt="photo">
           </div>
         </div>
       </section>
+      
       
       <section class="py-5" id="about-section">
         <div class="row">
@@ -80,27 +81,41 @@
           <p class="text-center">At Snazzy Paws Grooming, we do more than just grooming—we create a comfortable and caring experience for your furry friend.</p> 
           <p class="text-center">Our passionate team ensures your pet feels relaxed and pampered while our skilled groomers work their magic.</p>
         </div>
-        <div class="container d-flex justify-content-center flex-wrap bg-white rounded-3 gap-3 py-5 mt-4" id="custom-width">
-          <div class="d-flex flex-column gap-5">
-            <div class="d-flex align-items-center gap-2">
-              <img src="images/location-pin-svgrepo-com.svg" width="20" height="20" alt="location-icon">
-              <p class="mb-0">Hamilton</p>
+        <div class="container-sm w-50 bg-light bg-white rounded-3 py-5 my-5">
+
+          <div class="row g-4 text-center text-md-start d-flex justify-content-center">
+        
+            <!-- Left Column: Location & Email -->
+            <div class="col-12 col-md-6 d-flex flex-column gap-4">
+              <!-- Location -->
+              <div class="d-flex align-items-center gap-2">
+                <img src="images/location-pin-svgrepo-com.svg" width="20" height="20" alt="location-icon">
+                <p class="mb-0">Hamilton, New Zealand</p>
+              </div>
+              <!-- Email -->
+              <div class="d-flex align-items-center gap-2">
+                <img src="images/email-message-mail-envelope-svgrepo-com.svg" width="20" height="20" alt="email-icon">
+                <p class="mb-0">snazzypawsgrooming@email.com</p>
+              </div>
             </div>
-            <div class="d-flex align-items-center gap-2">
-              <img src="images/phone-svgrepo-com.svg" width="20" height="20" alt="phone-icon">
-              <p class="mb-0">09456734532</p>
+        
+            <!-- Right Column: Phone & Button -->
+            <div class="col-12 col-md-6 d-flex flex-column gap-4">
+              <!-- Phone -->
+              <div class="d-flex align-items-center gap-2">
+                <img src="images/phone-svgrepo-com.svg" width="20" height="20" alt="phone-icon">
+                <p class="mb-0">09456734532</p>
+              </div>
+              <!-- Button -->
+              <div class="text-center text-md-start">
+                <a class="btn btn-outline-primary btn-sm" href="contact.html">View more <span>&rarr;</span></a>
+              </div>
             </div>
-          </div>
-          <div class="d-flex flex-column gap-5">
-            <div class="d-flex align-items-center gap-2">
-              <img src="images/email-message-mail-envelope-svgrepo-com.svg" width="20" height="20" alt="email-icon">
-              <p class="mb-0">snazzypawsgrooming@email.com</p>
-            </div>
-            <div class="d-flex align-items-center justify-content-end">
-              <a type="button" class="btn btn-outline-primary btn-sm" role="button" href="contact.html">View more <span>&rarr;</span></a>
-            </div>
+        
           </div>
         </div>
+        
+        
         
       </section>
       <section id="services" class="py-5">

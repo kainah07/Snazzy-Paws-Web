@@ -36,18 +36,18 @@
             <span class="material-symbols-outlined">close</span>
           </button>
           </div class="">
-          <ul class="navbar-nav gap-4 d-lg-flex flex-lg-row d-md-flex flex-md-column vh-md-100 ps-md-5">
+          <ul class="navbar-nav gap-4 d-lg-flex flex-lg-row d-md-flex flex-md-column ps-5 ps-md-5 ps-sm-5">
             <li class="nav-item">
-              <a class="nav-link active fs-md-5 fw-medium" aria-current="page" href="#">Home</a>
+              <a class="nav-link fs-5" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-md-5 fw-medium" href="services.html">Services</a>
+              <a class="nav-link active fs-5" aria-current="page" href="services.html">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-md-5 fw-medium" href="gallery.html">Gallery</a>
+              <a class="nav-link fs-5" href="gallery.html">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-md-5 fw-medium" href="contact.html">Contact Us</a>
+              <a class="nav-link fs-5 " href="contact.html">Contact Us</a>
             </li>
             </li>
             <li class="nav-item d-lg-none">
@@ -64,21 +64,21 @@
     </nav>
     
     <main>
-      <div class="snazzy-paws"><h1>Snazzy Paws Grooming Services</h1></div>
-      <section class="educational-container">
-        <div class="tips-container">
+      <h1>Snazzy Paws Grooming Services</h1>
+      <section class="row m-5 d-flex justify-content-center">
+        <div class="col-md-5">
           <h2>Grooming Tips</h2>
           <p>At Snazzy Paws Grooming we believe every pet owner deserves the tools to keep their furry friend happy and healthy</p> 
           <p>Check out these helpful guides and resources to get started!</p>
           <br>
           <a class="border-button-small" href="#">Read more <span>&rarr;</span></a>
         </div>       
-        <img src="images/dog-image(2).webp" width="427" height="299" alt="photo">        
+        <img class="col-md-5" src="images/dog-image(2).webp" width="427" height="299" alt="photo">        
       </section>
-      <section class="gift-voucher-container">
-        <img src="images/voucher.svg" width="600" height="330" alt="Snazzy Paws Grooming gift voucher">
-        <div class="gift-voucher-details">
-          <h2>Gift Voucher</h2>
+      <section class="row d-flex justify-content-center m-1  align-items-center">
+        <img class="col-md-5 rounded-5" src="images/voucher.svg" width="600" height="330" alt="Snazzy Paws Grooming gift voucher">
+        <div class="col-md-5">
+          <h2 class="text-start">Gift Voucher</h2>
           <p>Looking for the perfect gift for a pet lover?</p>
           <p>Give the gift of pampering with a Snazzy Paws Grooming Gift Voucher!</p> 
           <p>Treat their furry friend to a luxurious grooming experience, complete with bathing, nail trimming, clipping, and more.</p>
@@ -87,31 +87,32 @@
           </div>
         </div>
       </section>
-      <section class="what-we-offer-section">
+      <section class="mt-5">
         <h2>What we offer</h2>
-        <div class="packages-container">       
-          <div>
+        <div class="row d-flex justify-content-center my-5 align-items-center text-center">       
+          <div class="col-md-2">
             <img src="images/services(1).svg" width="250" height="250" alt="Basic grooming">
           </div>       
-          <div>
+          <div class="col-md-2">
             <img src="images/services(2).svg" width="250" height="250" alt="Specialty services">       
           </div>       
-          <div>
+          <div class="col-md-2">
             <img src="images/services(3).svg" width="250" height="250" alt="Premium packages">
           </div>       
-          <div>
+          <div class="col-md-2">
             <img src="images/services(4).svg" width="250" height="250" alt="Add ons & treatments">
           </div>
         </div>
       </section>
-      <section class="dog-grooming-section">
-        <h2>Schedule Your Dog's <br> Grooming Session Today!</h2>
+
+      <section class="p-5">
+        <h2 class="text-lg-start text-sm-center">Schedule Your Dog's <br> Grooming Session Today!</h2>
         <br>   
-        <a class="appointment-button" href="booking.html">Book Now</a>
-        <div class="dog-grooming-container">
-          <h2>Our grooming services</h2>        
-          <div class="row">
-            <div class="services-container">
+        <a class="btn btn-primary" href="booking.html" role="button">Book Now</a>
+        <div class="container m-5 bg-primary p-5">
+          <h2 class="m-5">Our grooming services</h2>        
+          <div class="row m-5  gap-5 d-flex justify-content-around">
+            <div class="col-md-5 bg-secondary">
               <h3>Basic grooming services</h3>
               <div class="services">
                 <div class="service">
@@ -151,7 +152,7 @@
                 </div>                                 
               </div>                        
             </div>
-            <div class="services-container">
+            <div class="col-md-5 bg-secondary ">
               <h3>Add-ons & Treatments</h3>
               <div class="services">
                 <div class="service">
