@@ -256,11 +256,6 @@ footer {
     box-sizing: border-box;
     flex-direction: column-reverse;
   }
-
-  
-
- 
-
 }
 
 /* For small screens (mobile) */
@@ -293,7 +288,7 @@ footer {
 
   #bookingCon {
     flex-direction: column-reverse;
-    background-image: url('../images/background\(2\).webp');
+    width: 100%;
   }
 
   
