@@ -203,6 +203,15 @@ nav .nav-link.active::after {
   border: 0;
 }
 
+#bookingCon {
+  background-image: url('../images/background\(2\).webp');
+  width: 800px;
+}
+
+#bookingDetails {
+  background-image: url('../images/yellow-background.webp');
+}
+
 
 footer {
   background-color: #d4af37;
@@ -248,6 +257,9 @@ footer {
     flex-direction: column-reverse;
   }
 
+  
+
+ 
 
 }
 
@@ -277,6 +289,11 @@ footer {
 
   #contactCon {
     width: 100%;
+  }
+
+  #bookingCon {
+    flex-direction: column-reverse;
+    background-image: url('../images/background\(2\).webp');
   }
 
   
