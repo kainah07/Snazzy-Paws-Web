@@ -87,12 +87,16 @@ nav .nav-link.active::after {
 #custom-width {
   width: 40%;
 }
+#service img{
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-#service {
+#service img{
   transition: transform 0.4s ease-in-out;
 }
 
-#service:hover {
+#service img:hover {
   transform: scale(1.1);
 }
 
@@ -118,11 +122,92 @@ nav .nav-link.active::after {
   background-size: cover;
 }
 
+
+#dogGroomingCon {
+  background-image: url('../images/background\(1\).webp');
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#serviceAndPrice {
+  border-bottom: 3px dotted #ccc;
+}
+
+#serviceName {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+#servicePrice {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e67e22;
+}
+
+#conSec {
+  background-image: url('../images/background\(5\).webp');
+  background-size: cover;
+  
+}
+
+#formConSec {
+  background-image:url('../images/background\(2\).webp');
+  background-size: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+#formSec {
+  background-image:url('../images/yellow-background.webp');
+  background-size: cover;
+}
+
+#imgCon {
+  width: 18rem;
+}
+
+#imgCon img {
+  width: 100%;
+  height: auto;
+}
+
+#imgCon p {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.0rem;
+}
+
+#contactCon {
+  width: 800px;
+  background-image:url('../images/yellow-background.webp');
+  background-size: cover;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#conDetails {
+  background-image:url('../images/background(2).webp');
+}
+
+#map {
+  width: 100%; 
+  height: 100vh; 
+  box-sizing: border-box;
+}
+
+#map iframe {
+  width: 100%; 
+  height: 600px; 
+  max-width: 1000px; 
+  border: 0;
+}
+
+
 footer {
   background-color: #d4af37;
 }
 
-/* For medium screens (tablets) */
 @media (max-width: 768px) {
   nav .nav-link::after {
     background-color: white;
@@ -139,8 +224,8 @@ footer {
   }
 
   #voucher {
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
   }
 
   #testimonialSlider {
@@ -152,7 +237,18 @@ footer {
     height: 60%;
   }
 
-  
+  #dogImage {   
+    width: 50%;
+    height: 50%;
+  }
+
+  #contactCon {
+    width: 80%;
+    box-sizing: border-box;
+    flex-direction: column-reverse;
+  }
+
+
 }
 
 /* For small screens (mobile) */
@@ -178,6 +274,12 @@ footer {
     height: 100%;
     width: 100%;
   }
+
+  #contactCon {
+    width: 100%;
+  }
+
+  
 }
 
 

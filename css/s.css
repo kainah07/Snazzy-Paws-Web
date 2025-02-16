@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +18,47 @@ body {
   padding: 0;
   margin: 0;
   
+}
+@font-face {
+  font-family: 'Damion';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/damion/v15/hv-XlzJ3KEUe_YZkZGw2ATE.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjxAwXjeu.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/pacifico/v22/FwZY7-Qmy14u9lezJ-6K6MmTpA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v34/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVsEpbCFPrEHJA.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 h1 {
   font-size: 2.5em; 
@@ -107,18 +147,20 @@ nav li{
   width: 250px;
   z-index: 999;
   background-color: rgba(255, 255, 255, 0.438);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   display: none;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  gap: 15px;
 }
 .sidebar li {
   padding: 20px;
   width: 100%;
 }
 .sidebar a {
+  font-size: 20px;
   text-decoration: none;
   color: #363636;
 }
@@ -130,6 +172,10 @@ nav li{
   top: 10px; 
   padding: 10px;
   cursor: pointer; 
+}
+.sidebar .appointment-button {
+  color: #ffffff;
+  padding: 12px 40px;
 }
 /*====================================== Buttons ======================================*/
 /* Appointment button header */
@@ -225,11 +271,10 @@ nav li{
 /*====================================== Hero Section ======================================*/
 /*Hero section*/
 .hero-section {
-  height: 100vh;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 10%;
+  padding: 50px;
 }
 .hero-contents {
   display: flex;
@@ -248,9 +293,6 @@ nav li{
   font-size: 1.2em;
   color: #333333;
   margin-bottom: 5%;
-}
-.hero-section img {
-  margin-top: 5%;
 }
 /*====================================== About Section ======================================*/
 .about-us-section {
@@ -481,7 +523,7 @@ nav li{
 }
 /*====================================== Services Page ======================================*/
 .educational-container {
-  padding: 20px;
+  padding: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -632,45 +674,19 @@ nav li{
   background-color: #f7f7f7;
 }
 /*====================================== Gallery ======================================*/
-.con{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10%;
-}
-.con-contents {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.con-text-container {
-  text-align: left;     
-}
-.con h1 {
-  text-align: left;
- 
-}
-.con p {
-  text-align: left;
-  font-family:'Raleway', sans-serif;
-  color: #333333;
-}
-.con img {
-  width: 500px;
-  height: auto;
- 
-}
-.gallery-main-container h2{
+.con {
   margin: 50px;
 }
+.con p {
+  text-align: center;
+}
 .video {
+  margin-top: 10px;
   padding: 30px;
   display: flex;
   flex-direction: column; 
   align-items: center; 
-  background-image: url('../images/bg.png');
-  background-size: cover;
+  background-color: #d4af37;
 }
 .video h2 {
   margin-bottom: 50px; 
@@ -689,35 +705,39 @@ nav li{
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
-div.gallery {
+.gallery {
   margin: 5px;
   float: left;
   width: 200px;
   background-color: #ffffff;
+  border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-div.gallery:hover {
+.gallery:hover {
   border: 1px solid #777;
 }
-div.gallery img {
+.gallery img {
   width: 100%;
   height: auto;
+  border-radius: 15px 15px 0px 0px;
 }
-div.desc {
+.desc {
   padding: 15px;
   text-align: center;
 }
-div.desc p {
+.desc p {
   font-family: 'Pacifico', cursive;
   font-size: 1.0rem;
   color: #000000;
 }
 .gallery-container {
-  margin: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
- 
+  background-image:url('../images/background\(2\).webp');
+  background-size: cover;
 }
 /*====================================== Contact ======================================*/
 .contact-form-section h1 {
@@ -738,14 +758,14 @@ div.desc p {
   flex-wrap: wrap;
   width: 800px;
   margin: 110px auto;
-  background-image:url('../images/bg.png');
+  background-image:url('../images/yellow-background.webp');
   background-size: cover;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .contact-details-container {
   padding: 50px;
-  background-image:url('../images/white-background.png');
+  background-image:url('../images/background\(2\).webp');
 }
 .contact-details-container h2{
  font-family: 'Roboto', sans-serif;
@@ -777,7 +797,7 @@ div.desc p {
 }
 .booking-form-container {
   display: flex;
-  background-image: url('../images/white-background.png');
+  background-image: url('../images/background\(2\).webp');
   align-items: center;
 }
 .booking-form {
@@ -838,7 +858,7 @@ div.desc p {
   width: 50%;
   height: 100%;
   padding: 20px;
-  background-image: url('../images/bg.png');
+  background-image: url('../images/yellow-background.webp');
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 .con-details {
@@ -948,11 +968,10 @@ footer p {
     font-size: 1em; 
   }
   .hero-section p {
-    font-size: 1em;
+    font-size: 1.3em;
   }
-  .about-us-contents p {
+  .quick-links-container a {
     font-size: 1em;
-    
   }
   .logo {
     width: 80%;
@@ -965,8 +984,7 @@ footer p {
   
   /*================== Hero section ==================*/
   .hero-section {
-    padding: 10px 10px 0px 10px;
-    margin-top: 50px;
+    padding: 100px;
     flex-direction: column;
     align-items: center;
   }
@@ -978,20 +996,22 @@ footer p {
     text-align: center;
   }
   .hero-section img {
-    width: 50%;
-    height: 50%;
+    margin-top: 20px;
+    width: 80%;
   }
   /*================== About us section ==================*/
   .contacts-container {
     flex-direction: column;
     gap: 0px;
+    text-align: center;
   }
+ 
   .gift-voucher-container img {
     width: 70%;
     height: 70%;
   }
-   .gift-voucher-details, .gift-voucher-details h2 {
-    text-align: center;
+  .gift-voucher-details {
+    padding: 30px;
   }
   /*================== Testimonials section ==================*/
   .testimonial-section {
@@ -1027,6 +1047,9 @@ footer p {
     width: 80%;
   }
   /*================== Educational section ==================*/
+  .educational-container {
+    padding: 0px;
+  }
   .educational-container img {
     width: 50%;
     height: 50%;
@@ -1070,22 +1093,6 @@ footer p {
     width: 90%;;
   }
   /*================== Gallery page ==================*/
-  .con-text-container {
-    padding: 20px;
-    text-align: center;     
-  }
-  
-  .con h1 {
-    text-align: center;
-    margin-bottom: 30px;
-   
-  }
-  
-  .con p {
-    text-align: center;
-    font-family:'Raleway', sans-serif;
-    color: #333333;
-  }
   .video iframe {
     max-width: 100%; 
     height: auto;
@@ -1161,6 +1168,15 @@ footer p {
   }
 }
 @media (max-width: 480px) {
+  h1 {
+    font-size: 2.0em;
+  }
+  h2 {
+    font-size: 1.5em; 
+  }
+  p {
+    font-size: 0.875em; 
+  }
   
   /*================== Sidebar ==================*/
   .sidebar{
@@ -1169,26 +1185,19 @@ footer p {
   }
   /*================== Hero section ==================*/
   .hero-section {
-    margin-top: 50px;
-    margin-left: 15px;
-    margin-right: 15px;
+    padding: 0px;
     flex-direction: column;
     text-align: center;
   }
   .hero-section p {
-    font-size: 0.875em;
-    text-align: center;
-  }
-  .hero-text-container {
-    margin-bottom: 10px;
+    font-size: 1.0em;
     text-align: center;
   }
   .hero-section .appointment-button {
-    padding: 5px 10px;
-    
+    padding: 5px 10px; 
   }
   .hero-section img {
-    width: 60%;
+    width: 90%;
   }
   .gift-voucher-container img {
     width: 100%;
@@ -1235,6 +1244,7 @@ footer p {
     width: 100%;
   }
   .educational-container {
+    padding: 0px;
     flex-direction: column-reverse;
   }
   .educational-container img {
@@ -1284,16 +1294,12 @@ footer p {
   .grid {
     grid-template-columns: 1fr; 
   }
-  div.gallery {
-    width: 100%; 
+  .gallery-container {
+    padding: 20px;
+  }
+ .gallery {
+    width: 90%; 
     margin-bottom: 15px;
-  }
-  #gallery-main h1 {
-    font-size: 1.5rem; 
-    margin: 20px 0;
-  }
-  div.desc p {
-    font-size: 0.9rem;
   }
   /*================== Contact ==================*/
   .contact-form-container {
