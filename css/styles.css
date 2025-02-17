@@ -7,6 +7,7 @@ html{
   height: 100%;
 }
 body {
+  font-family: 'Roboto', sans-serif;
   background-image:url('../images/main-background.webp');
   background-size: cover;
   background-repeat: no-repeat;
@@ -20,6 +21,113 @@ h1, h2 {
   text-align: center;
 }
 
+/*====================================== Buttons ======================================*/
+.custom-btn-primary-lg {
+  font-size: 15px;
+  text-decoration: none;
+  background-color: #d4af37;
+  color: #363636;
+  padding: 12px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.custom-btn-primary-lg:hover {
+  color: #d4af37;
+  border: 2px solid #d4af37;
+  background-color: transparent;
+}
+
+.custom-btn-primary {
+  font-size: 15px;
+  border: none;
+  text-decoration: none;
+  background-color: #d4af37;
+  color: #363636;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.custom-btn-primary:hover {
+  color: #d4af37;
+  border: 2px solid #d4af37;
+  background-color: transparent;
+}
+
+.custom-btn-side {
+  font-size: 15px;
+  border: none;
+  text-decoration: none;
+  background-color: #d4af37;
+  color: #363636;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.custom-btn-side:hover {
+  color: #d4af37;
+  border: 2px solid #d4af37;
+  background-color: transparent;
+}
+
+.custom-btn-primary-sm {
+  background-color: #d4af37; 
+  font-size: small;
+  color: #363636;
+  padding: 9px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.custom-btn-primary-sm:hover {
+  color: #d4af37;
+  border: 2px solid #d4af37;
+  background-color: transparent;
+}
+
+.custom-btn-outline-primary-sm {
+  font-size: 14px;
+  text-decoration: none;
+  background-color: #fff;
+  color: #363636;
+  padding: 3px 20px;
+  border: 3px solid #d4af37;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn-outline-primary-sm:hover {
+  color: #fff;
+  background-color: #e2ce75;
+}
+
+.custom-btn {
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #dddddd;
+  color: #363636;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.custom-btn:hover {
+  color: #363636;
+  background-color: #ffffff;
+}
+
+/*====================================== Navbar ======================================*/
 nav .nav-link::after,
 nav .nav-container a::before {
   transition: all .5s;
@@ -50,6 +158,7 @@ nav .nav-link.active::after {
   width: 80%;
 }
 
+
 .e5cd {
   background-color: transparent;
   border: none;                   
@@ -73,9 +182,14 @@ nav .nav-link.active::after {
   box-shadow: none;   
 }
 
+/*====================================== Background and sizes ======================================*/
 #about-section {
   background-image: url('../images/yellow-background.webp');
   background-size: cover;
+}
+
+.custom-container {
+  width: 600px;
 }
 
 #services {
@@ -213,29 +327,47 @@ nav .nav-link.active::after {
 }
 
 
+#privacyPolicy {
+  max-width: 800px;
+}
+
+#privacyPolicy h2{
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+}
+
+
 footer {
   background-color: #d4af37;
 }
 
 @media (max-width: 768px) {
+
+  .custom-btn-primary-lg {
+    display: none;
+  }
+
+  .custom-btn-primary {
+    padding: 10px 20px;
+  }
+
   nav .nav-link::after {
-    background-color: white;
+    width: 0%;
   }
-  nav .nav-link:hover::after{
-    width:80%;
+
+  nav .nav-link:hover::after {
+    width: 0%;
   }
+
   nav .nav-link.active::after {
-    color: #c9ac55;
+    width: 0%;
   }
 
   #custom-width {
     width: 50%;
   }
 
-  #voucher {
-    width: 70%;
-    height: 70%;
-  }
+  
 
   #testimonialSlider {
     width: 100%;
@@ -255,6 +387,10 @@ footer {
     width: 80%;
     box-sizing: border-box;
     flex-direction: column-reverse;
+  }
+
+  .custom-container {
+    width: 50%;
   }
 }
 
@@ -289,6 +425,20 @@ footer {
   #bookingCon {
     flex-direction: column-reverse;
     width: 100%;
+  }
+
+  .custom-container {
+    width: 90%;
+  }
+
+  .custom-btn-primary {
+    font-size: small;
+    padding: 9px 15px;
+  }
+
+  #dogImage { 
+    width: 100%;
+    height: 100%;
   }
 
   

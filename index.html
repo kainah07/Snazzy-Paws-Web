@@ -1,22 +1,29 @@
 <!-- Shekinah Joy Canosa 5075645 Assessment 3-->
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snazzy Paws Grooming</title>
+
     <link rel="stylesheet" href="css/styles.css" >
+    
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Damion&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <!--Google icons-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close,menu" />
+    
     <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">   
   </head>
 
   <body>
+
+    <!--Navbar-->
     <nav class="navbar navbar-expand-lg container-fluid d-flex justify-content-lg-around justify-content-md-between align-items-center">
       <div class="d-flex align-items-center ps-lg-0 ps-md-2">
         <button class="navbar-toggler border-0 shadow-none e5cd" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,8 +52,8 @@
               <a class="nav-link fs-5 " href="contact.html">Contact Us</a>
             </li>
             </li>
-            <li class="nav-item d-lg-none">
-              <a class="btn btn-primary" href="booking.html" role="button">Book Now</a>
+            <li class="nav-item d-lg-none mt-2">
+              <a class="custom-btn-side" href="booking.html" role="button">Book Now</a>
             </li>
           </ul>
           <div>
@@ -54,68 +61,56 @@
         </div>
       </div>
       <div>
-        <a class="btn btn-primary d-none d-lg-block" href="booking.html" role="button">Book Now</a>
+        <a class="custom-btn-primary-lg " href="booking.html" role="button">Book Now</a>
       </div>
     </nav>
     
-
     <main>
+      <!--Hero section-->
       <section class="container py-5">
-        <div class="row align-items-center">
-          <!-- Text Column -->
+        <div class="row align-items-center g-5">
           <div class="col-12 col-md-6 text-center text-md-start">
-            <h1 class="fw-bold text-start">Welcome to Snazzy Paws Grooming!</h1>
-            <p>Where every pet gets the best care, style, and comfort.</p>
-            <a class="btn btn-primary" href="booking.html">Book Now</a>
+            <h1 class="fw-bold text-lg-start text-md-start">Welcome to Snazzy Paws Grooming!</h1>
+            <p class="mb-4">Where every pet gets the best care, style, and comfort.</p>
+            <a class="custom-btn-primary" href="booking.html">Book Now</a>
           </div>       
-          <!-- Image Column -->
           <div class="col-12 col-md-6 text-center">
             <img src="images/dog-image.svg" class="img-fluid mx-auto d-block" width="500" height="500" alt="photo">
           </div>
         </div>
       </section>
       
-      
+      <!--About section-->
       <section class="py-5" id="about-section">
         <div class="row">
           <h2 >About us</h2>
           <p class="text-center">At Snazzy Paws Grooming, we do more than just grooming—we create a comfortable and caring experience for your furry friend.</p> 
           <p class="text-center">Our passionate team ensures your pet feels relaxed and pampered while our skilled groomers work their magic.</p>
         </div>
-        <div class="container-sm w-50 bg-light bg-white rounded-3 py-5 my-5">
-
-          <div class="row g-4 text-center text-md-start d-flex justify-content-center">
-        
-            <!-- Left Column: Location & Email -->
-            <div class="col-12 col-md-6 d-flex flex-column gap-4">
-              <!-- Location -->
-              <div class="d-flex align-items-center gap-2">
-                <img src="images/location-pin-svgrepo-com.svg" width="20" height="20" alt="location-icon">
-                <p class="mb-0">Hamilton, New Zealand</p>
-              </div>
-              <!-- Email -->
-              <div class="d-flex align-items-center gap-2">
-                <img src="images/email-message-mail-envelope-svgrepo-com.svg" width="20" height="20" alt="email-icon">
-                <p class="mb-0">snazzypawsgrooming@email.com</p>
-              </div>
+        <div class="custom-container d-flex justify-content-between flex-lg-row flex-md-column flex-column bg-light rounded-3 mx-auto my-5 p-5 gap-4">
+          <div class="d-flex flex-column gap-4 align-items-start">
+            <div class="d-flex align-items-center gap-2">
+              <img src="images/location-pin-svgrepo-com.svg" width="20" height="20" alt="location-icon">
+              <p class="mb-0">Hamilton, New Zealand</p>
             </div>
-        
-            <!-- Right Column: Phone & Button -->
-            <div class="col-12 col-md-6 d-flex flex-column gap-4">
-              <!-- Phone -->
-              <div class="d-flex align-items-center gap-2">
-                <img src="images/phone-svgrepo-com.svg" width="20" height="20" alt="phone-icon">
-                <p class="mb-0">09456734532</p>
-              </div>
-              <!-- Button -->
-              <div class="text-center text-md-start">
-                <a class="btn btn-outline-primary btn-sm" href="contact.html">View more <span>&rarr;</span></a>
-              </div>
-            </div>        
+            <div class="d-flex align-items-center gap-2">
+              <img src="images/phone-svgrepo-com.svg" width="20" height="20" alt="phone-icon">
+              <p class="mb-0">+64 021 123 4567</p>
+            </div>
           </div>
-        </div>
-           
+          <div class="d-flex flex-column gap-4">
+            <div class="d-flex align-items-center gap-2">
+              <img src="images/email-message-mail-envelope-svgrepo-com.svg" width="20" height="20" alt="email-icon">
+              <p class="mb-0">snazzypawsgrooming@email.com</p>
+            </div>
+            <div class="">
+              <a class="custom-btn-outline-primary-sm" href="contact.html">View more <span>&rarr;</span></a>
+            </div>
+          </div>                 
+        </div>           
       </section>
+
+      <!--Services section-->
       <section id="services" class="py-5">
         <h2>Our Services</h2>
         <div class="d-flex flex-wrap justify-content-center gap-5 p-5">
@@ -137,12 +132,13 @@
           </div>
         </div>
         <div class="d-flex justify-content-center">
-          <a type="button" class="btn btn-outline-primary btn-sm" role="button" href="services.html">
+          <a type="button" class="custom-btn-outline-primary-sm" role="button" href="services.html">
             View more <span>&rarr;</span>
           </a>
         </div>
-        
-        <div class="row d-flex justify-content-center flex-lg-row flex-md-column align-items-center g-5 mt-5">
+
+         <!--Voucher-->
+        <div class="container row d-flex justify-content-center flex-lg-row flex-md-column align-items-center mt-5 mx-auto">
           <img class="col-md-6 rounded-4" id="voucher" src="images/voucher.svg" width="600" height="330" alt="Snazzy Paws Grooming gift voucher">
           <div class="col-lg-6 col-md-8">
             <h2 class="text-start">Gift Voucher</h2>
@@ -153,13 +149,13 @@
               nail trimming, clipping, and more.
             </p>
             <div>
-              <button class="button">Buy Now</button>
+              <button class="custom-btn-primary-sm">Buy Now</button>
             </div>
           </div>
         </div>
-        
       </section>
 
+       <!--Testimonials section-->
       <section id="testimonials" class="d-flex flex-column justify-content-center align-items-center px-md-4 py-5">
         <h2 class="pb-3">Testimonials</h2>
         <div id="testimonialSlider" class="carousel carousel-dark slide pb-5 py-4 px-1 rounded-5 bg-light">
@@ -213,6 +209,8 @@
           </button>
         </div>
       </section>
+
+       <!--Background story section-->
       <section id="backgroundSection" class="p-5">
         <h2>Our Story</h2>
         <div class="d-flex justify-content-center flex-wrap position-relative">
@@ -224,11 +222,11 @@
               </p>
             </div>     
           </div>
-        </div>
-        
-        
+        </div>        
       </section>     
     </main>
+
+     <!--Footer-->
     <footer class="p-5">
       <div class="d-flex justify-content-lg-around flex-wrap flex-lg-row flex-sm-column text-start gap-2">
         <div class="">
@@ -274,6 +272,8 @@
         <a class="nav-link" href="privacypolicy.html">Privacy Policy</a>
       </div>
     </footer>
+
+     <!--Script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
   </body>
