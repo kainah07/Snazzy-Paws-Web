@@ -28,51 +28,57 @@
   </head>
   
   <body>
-
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg container-fluid d-flex justify-content-lg-around justify-content-md-between align-items-center">
+      
       <div class="d-flex align-items-center ps-lg-0 ps-md-2">
+        <!--Menu button-->
         <button class="navbar-toggler border-0 shadow-none e5cd" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" aria-expanded="false" aria-label="Toggle navigation">
           <span class="material-symbols-outlined">menu</span>
         </button>
+        <!--Logo-->
         <a href="index.html"><img class="logo" src="images/logo-transparent.svg" width="100" height="100" alt="Snazzy Paws Grooming logo"></a>
       </div>
+      
       <div>
         <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
           <div class="offcanvas-header d-flex justify-content-end d-lg-none">
-          <button type="button" class="e5cd" data-bs-dismiss="offcanvas" aria-label="Close">
-            <span class="material-symbols-outlined">close</span>
-          </button>
-          </div class="">
-          <ul class="navbar-nav gap-4 d-lg-flex flex-lg-row d-md-flex flex-md-column ps-5 ps-md-5 ps-sm-5">
-            <li class="nav-item">
-              <a class="nav-link fs-5" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active fs-5" aria-current="page" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-5" href="gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-5 " href="contact.html">Contact Us</a>
-            </li>
-            </li>
-            <li class="nav-item d-lg-none mt-2">
-              <a class="custom-btn-side" href="booking.html" role="button">Book Now</a>
-            </li>
-          </ul>
-          <div>
+             <!--Close button for mobile slider menu-->
+            <button type="button" class="e5cd" data-bs-dismiss="offcanvas" aria-label="Close">
+              <span class="material-symbols-outlined">close</span>
+            </button>
+
+            <!--Navigation links-->
+            </div>
+              <ul class="navbar-nav gap-4 d-lg-flex flex-lg-row d-md-flex flex-md-column ps-5 ps-md-5 ps-sm-5">
+                <li class="nav-item">
+                  <a class="nav-link fs-5"  href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active fs-5 " aria-current="page" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                 <a class="nav-link fs-5" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-5 " href="contact.html">Contact Us</a>
+                </li>
+                </li>
+                <li class="nav-item d-lg-none mt-2">
+                  <a class="custom-btn-side" href="booking.html" role="button">Book Now</a>
+                </li>
+              </ul>
+              <div>
+            </div>
           </div>
         </div>
-      </div>
+      <!--Booking button link-->
       <div>
-        <a class="custom-btn-primary-lg" href="booking.html" role="button">Book Now</a>
+      <a class="custom-btn-primary-lg " href="booking.html" role="button">Book Now</a>
       </div>
     </nav>
     
     <main>
-
       <!--Education section-->
       <h1  class="m-5 fw-bold">Snazzy Paws Grooming Services</h1>
       <section class="container row m-5 d-flex justify-content-center gap-4 mx-auto">
