@@ -484,11 +484,6 @@ footer {
     flex-direction: column-reverse;
   }
 
-  #bookingCon {
-    flex-direction: column-reverse;
-    width: 80%;
-  }
-
   .custom-container {
     width: 50%;
   }
