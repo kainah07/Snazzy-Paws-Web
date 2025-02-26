@@ -184,6 +184,7 @@ h1, h2 {
 .custom-btn-outline-primary-sm:hover {
   color: #fff;
   background-color: #e2ce75;
+  border: 2px solid #e2ce75;
 }
 
 .custom-btn {
@@ -341,11 +342,12 @@ nav .nav-link.active::after {
   background-size: cover;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
+  max-width: 850px;
 }
 #formSec {
   background-image:url('../images/yellow-background.webp');
   background-size: cover;
+  width: 400px;
 }
 
 .img-con {
@@ -478,6 +480,15 @@ footer {
     height: 50%;
   }
 
+  #formConSec {
+    width: 80%;
+    flex-direction: column;
+  }
+
+  #formSec {
+    width: 100%;
+  }
+
   #contactCon {
     width: 80%;
     box-sizing: border-box;
@@ -526,6 +537,14 @@ footer {
    #eduCon {
     flex-direction: column-reverse;
    }
+
+   #formConSec {
+    width: 100%;
+  }
+
+  #formSec {
+    width: 100%;
+  }
 
   #contactCon {
     width: 100%;
