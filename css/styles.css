@@ -326,6 +326,10 @@ nav .nav-link.active::after {
   background-size: cover;
 }
 
+#storyCon {
+  width: 850px;
+}
+
 
 #dogGroomingCon {
   background-image: url('../images/background\(1\).webp');
@@ -435,6 +439,15 @@ footer {
 
 /*====================================== For tablet ======================================*/
 @media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em; 
+  }
+  h2 {
+    font-size: 1.8em; 
+  }
+  p {
+    font-size: 1em; 
+  }
 
   .logo {
     width: 80%;
@@ -471,13 +484,16 @@ footer {
     width: 50%;
   }
 
-  #testimonialSlider {
-    width: 100%;
+  #voucher {
+    width: 70%;
   }
 
-  #backgroundSection img {
-    width: 50%;
-    height: 60%;
+  #testimonialSlider {
+    width: 95%;
+  }
+
+  #storyCon img {
+    width: 50%;    
   }
 
   #dogImage {   
@@ -503,6 +519,15 @@ footer {
 
 /*====================================== For mobile ======================================*/
 @media (max-width: 480px) {
+  h1 {
+    font-size: 2.0em;
+  }
+  h2 {
+    font-size: 1.5em; 
+  }
+  p {
+    font-size: 0.875em; 
+  }
   #custom-width {
     width: 75%;
   }
@@ -520,10 +545,15 @@ footer {
     height: 100%;
   }
 
-  #backgroundSection img {
-    height: 100%;
-    width: 100%;
-  }
+  #storyCon img {
+    margin-top: 50px;
+    width: 100%;  
+    height: 100%;  
+   }
+
+   #eduCon {
+    flex-direction: column-reverse;
+   }
 
   #contactCon {
     width: 100%;
